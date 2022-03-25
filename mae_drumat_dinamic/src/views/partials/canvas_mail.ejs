@@ -1,0 +1,35 @@
+<!-- ESTE CANVAS APARECE EN PANTALLA AL HACER CLICK EN EL BOTON DE MAIL QUE SE ENCUENTRA EN EL FOOTER -->
+
+<div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+    <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <p class="text-white text-center">Envianos un e-mail con todas tus dudas o consultas
+        </p>
+        <form action="">
+            <select class="form-select mb-3" aria-label="selector_formulario">
+                <option selected>Tipo de Consulta</option>
+                <option value="1">Consulta</option>
+                <option value="2">Sugerencia</option>
+                <option value="3">Reclamo</option>  
+            </select>
+            <div class="mb-3">
+                <label for="nombre_formulario" class="form-label text-white">Nombre</label>
+                <input type="text" class="form-control" id="nombre_formulario" placeholder="">
+            </div>
+            <div class="mb-3">
+                <label for="email_formulario" class="form-label text-white">Email</label>
+                <input type="email" class="form-control" id="email_formulario" placeholder="">
+              </div>
+              <div class="mb-3">
+                <label for="consulta_formulario" class="form-label text-white">Contanos, estamos para escucharte!</label>
+                <textarea class="form-control" id="consulta_formulario" rows="5"></textarea>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-success text-dark">Enviar</button>
+            </div>
+        </form>
+    </div>
+</div>

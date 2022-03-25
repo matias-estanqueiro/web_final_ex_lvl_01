@@ -1,0 +1,145 @@
+.paginas{
+    background-image: url("../img/wall_pages.png");
+}
+
+.tachado{
+    text-decoration: line-through;
+}
+
+.home{
+    background-color: black;
+}
+.texto_justificado{
+    color: white;
+    background-color: rgba(0,0,0,.9);
+    text-align: justify;
+    border-bottom: green solid 2px;
+}
+
+.texto_foot{
+    font-size: small;
+}
+
+.banner{
+    background-color: rgba(255,255,255,.3);
+}
+
+.principal_mobile{
+    display: none;
+}
+
+.principal_tablet{
+    display: none;
+}
+
+.banner_mobile{
+    display: none;
+}
+
+.banner_tablet{
+    display: none;
+}
+
+.imagen_tablet{
+    display: none;
+}
+
+.borde_card{
+    border: 2px solid green;
+}
+
+.borde_footer{
+    border-top: 2px solid green;
+}
+
+/*------------------------------ TAMAÑO: TABLET ------------------------------*/ 
+
+@media (max-width: 900px){
+    .principal_tablet{
+        display: flex;
+    }
+
+    .banner_tablet{
+        display: flex;
+    }
+
+    .imagen_tablet{
+        display: flex;
+    }
+
+    .form_news{
+        padding-bottom: 10px !important
+    }
+    
+    .principal_fullscreen{
+        display:none;
+    }
+
+    .principal_mobile{
+        display: none;
+    }
+    
+    .banner_fullscreen{
+        display: none;
+    }
+
+    .banner_mobile{
+        display: none;
+    }
+
+    .imagen_who_2{
+        margin-top: 15px;
+    }
+}
+
+/*------------------------------ TAMAÑO: CELULAR ------------------------------*/ 
+
+@media (max-width: 420px) {
+    .principal_mobile{
+        display: flex;
+    }
+
+    .banner_mobile{
+        display: flex;
+    }
+    
+    .principal_fullscreen{
+        display:none;
+    }
+
+    .principal_tablet{
+        display: none;
+    }
+
+    .banner_fullscreen{
+        display: none;
+    }
+
+    .banner_tablet{
+        display: none;
+    }
+
+    .imagen_tablet{
+        display: none;
+    }
+    
+    .form_news{
+        padding-bottom: 40px !important
+    }
+    .cont_imagen{
+        display: flex;
+        justify-content: center;
+    }
+
+    .imagen_who{    
+        width: 350px;
+    }
+
+    .imagen_who_2{
+        display: none !important;
+    }
+
+    .texto_foot{
+        font-size: xx-small;
+    }
+}
